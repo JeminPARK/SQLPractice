@@ -9,3 +9,5 @@ WITH SHORT AS( SELECT CITY, LENGTH(CITY) FROM STATION GROUP BY CITY ORDER BY LEN
 -- Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
 select city from station where LEFT(city,1) IN ('i.e.', 'a', 'e','i', 'o', 'u');    
 
+-- Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Your result cannot contain duplicates.
+select city from station where RIGHT(city, 1) IN ('i.e', 'a', 'e', 'i', 'o', 'u') group by city;
