@@ -30,3 +30,6 @@ select city from station where left(city, 1) not in ('a', 'e', 'i', 'o', 'u') an
 -- Query the Name of any student in STUDENTS who scored higher than  Marks. Order your output by the last three characters of each name. 
 -- If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.
 select name from students where marks > 75 order by right(name, 3) asc, id asc;
+
+-- Query the Western Longitude (LONG_W)where the smallest Northern Latitude (LAT_N) in STATION is greater than . Round your answer to  decimal places.
+select round(long_w,4) from station where lat_n > 38.7780 order by lat_n limit 1 ;
