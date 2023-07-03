@@ -1,3 +1,5 @@
-# hackerrank mysql
 
- 
+
+# HackerRank mySql
+
+basic to advance sql query
